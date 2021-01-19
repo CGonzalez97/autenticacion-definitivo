@@ -14,12 +14,14 @@ import { IncidenciasListadoComponent } from './components/incidencias-listado/in
 import {MatTableModule} from '@angular/material/table';
 import { AuthLoginComponent } from './components/auth-login/auth-login.component';
 import { AuthService } from './services/auth.service';
+import { FormularioContraComponent } from './components/formulario-contra/formulario-contra.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IncidenciasListadoComponent,
-    AuthLoginComponent
+    AuthLoginComponent,
+    FormularioContraComponent
   ],
   imports: [
     BrowserModule,

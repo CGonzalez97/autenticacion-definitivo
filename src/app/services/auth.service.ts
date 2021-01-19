@@ -22,7 +22,7 @@ export class AuthService {
       return this.afAuth.signInWithPopup(provider).then((result) => {
         console.log(result);
         const perfilUsuarioLogueado = result.additionalUserInfo.profile;
-        //const {email="", family_name: apellidos = "", given_name: nombre = "", picture: foto = ""} = perfilUsuarioLogueado || {};
+        //const {email="", family_name: apellidos = "", given_name: nombre = "", picture: foto = "" =  perfilUsuarioLogueado || {};
         this.afs.collection('users').add(perfilUsuarioLogueado);
 
       }).catch((error) => {
